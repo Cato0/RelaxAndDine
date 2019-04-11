@@ -1,0 +1,174 @@
+/* Empty. Add your own CSS if you like */
+
+.scroll {
+    height: 100%; 
+}
+ 
+#bottomBar {
+	width: 100%;
+	height: 5%;
+	padding-bottom: 0%;
+}
+
+#ionContent {
+	
+	width: 100%;
+	height: 73%;
+}
+
+
+#navBar {
+	
+	background-color: blue;
+}
+
+#navigateToNextParkingSpace_Button {
+	margin-top: 5%;
+}
+
+
+.fontS {
+	font-size: 110%;
+}
+
+.nameList {
+	color: white;
+	width: 100%;
+	height: 15%;
+	font-size: 18px;
+	float: left;
+	
+	background-color: red;
+}
+.textList {
+	margin-top:80%;
+	font-size: 15;
+}
+
+.iconList {
+	float: right;
+	margin-right: 10%;
+}
+
+.parkingImage {
+	
+	width: 20%;
+	height: 20%;
+}
+
+.list {
+	width: 100%;
+}
+
+.large_button {
+	
+	width: 50%;
+	height: 5px;
+	background-color: red;
+}
+
+.myButton {
+	
+	width: 80%;
+	/* height: 10%; */
+	margin-left: 10%;
+	margin-bottom: 1%;
+	
+}
+
+#DistanceInputDiv {
+	width: 100%;
+	margin-bottom: 0.5%;
+}
+
+.bigItem {
+	padding-top: 5%;
+	width: 100%;
+	height: 40%;
+}
+
+#homeImage {
+	float: left;
+	margin-top: 15%;
+	margin-left: 0%;
+	/* width: 20%; */
+	height: 80%;
+}
+
+#homeText {
+	float: right;
+	margin-top: 4%;
+	margin-right: 25%;
+}
+
+#homeBottomDiv  {
+	margin-left: 20%;
+}
+
+.text1 {
+	
+	font-size: 120%;
+	
+}
+#text2 {
+	margin-left: 32%;
+}
+#text3 {
+	margin-left: 13%;
+}
+#topDiv {
+	padding-top: 5%;
+	height: 15%;
+}
+.headerFont {
+	margin-top: 15px;
+	font-size: 20px;
+	color: #2962ff;
+}
+
+
+#b123 {			/* hidden Button for click-update */
+	position: absolute;
+	visibility: hidden;
+}
+#colExcept {
+	padding-left: 20%;
+}
+
+.col:not(#colExcept1) {
+
+	padding: 0%;
+}
+
+
+
+.center {
+	text-align: center;
+}
+
+
+.row:not(.rowNot) {
+	
+}
+
+#addButton {
+	
+	/* width: 50%; */
+	/* height: 100%; */
+	/* float: left; */
+		
+	background-color: rgb(0, 255, 0);
+	color: white;	
+}
+
+
+/* #deleteButton { */
+	
+	/* width: 40%; */
+	/* height: 100%; */
+	/* float: right; */
+	
+/* } */
+
+
+

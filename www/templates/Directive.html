@@ -1,0 +1,62 @@
+
+<script src="js/controllers.js"></script>
+
+	<div class="col col-100">
+
+			<div class="row row-100">								<!-- ROW-90 -->
+			
+				<div class="col col-50" ng-click="go('app.info', $index)">			<!-- LEFT HALF IMG -->
+				
+					<div class="row row-20 bg1">
+					
+						<div class="col fontS" id="nameDirective">	
+							<text id="nameText">&nbsp;{{rest.name}}</text>
+						</div>		
+					</div>
+					
+					<div class="row row-80">
+						<img  class="imgDirective" ng-src="{{rest.img+img}}">
+					</div>
+				</div>
+				
+				<div class="col col-50" ng-click="go('app.info', $index)">			<!-- RIGHT HALF -->
+				
+					<div class="row row-20 greenFont">
+						<div class="col col-50 starDirective" id="{{'starDiv'+myindex}}">	<!-- STARS -->
+						</div>
+					</div>
+				
+					<div class="row row-80 bg1 fontS">						<!-- RIGHT HALF-90 -->	
+				
+						<div class="col col-50">
+						
+							<div class="row row-50 bor-bottom bor-right">																		
+								<text class="cent iconDistance" id="distanceDirective"><img class="small" src="img/destination_flag2.png" ></img><text class="t textDistance">{{rest.distance}}</text><br><text class="smallText">km</text> <text class="smallText"></text> </text>										
+							</div>
+													
+							<div class="row row-50 bor-right">							<!-- Time - Duration -->
+									<text class="cent mTop durationDirective" id="{{'durationDirective'+myindex}}"><img class="small" src="img/uhr.png" ></img> <text  class="textDuration"> {{rest.duration}}</text> <br><text class="smallText"> min</text></text>
+									<!-- ion-android-arrow-forward   -->
+							</div>
+						
+						</div>
+						
+						<div class="col col-50">								<!-- NEXT STEP DIRECTION -->
+						
+							<div class="row row-50 bor-bottom" id="nextStepDirective">
+								<text class=" cent">  <img class="small directionImage" src="img/pfeil_right.png" ></img><text class="nextStepText">{{rest.step.distance.value}}</text><text class="smallText"></text><br><text class="smallText"> km</text>  </text>	<!-- <text class="smallText fc1">{{rest.maneuver}}&nbsp;</text> -->
+							</div>
+							<!-- <i class="icon ion-arrow-up-c"> </i> -->
+							<!-- -->
+							<div class="row row-50">							<!-- NAVIGATE BUTTON -->
+								<button id="buttonNavigate" class="cent button button-large button-balanced buttonNavigate" ng-click="route();"  onclick="event.stopPropagation();" > <i class="icon ion-location"></i></button>
+							</div>		
+						
+						</div>		
+					</div>
+				</div>				
+				
+
+			</div>
+		</div>
+	

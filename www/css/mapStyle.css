@@ -1,0 +1,35 @@
+#mapButton {
+	
+	font-size: 75%;
+}
+#map {
+    width: 100%;
+    height: 100%;
+	z-index: -1; 
+	position:absolute;
+}
+
+#mapButtonDiv {
+	margin-left: 59%;
+	margin-top: 130%;
+	z-index: 0;
+	position: absolute;
+	color: blue;
+	visibility: hidden;
+}
+.buttonSmallB {
+	width: 75px;
+	background-color:#56B3FD;
+	color: white;
+	
+}
+.buttonSmallG {
+	width: 75px;
+	background-color:#00cc09;
+	color: white;
+	
+}
+.infoWindow {
+	width: 100%;
+	height: 100%;
+}

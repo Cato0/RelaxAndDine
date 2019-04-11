@@ -1,0 +1,14 @@
+.mBot {				/* all rows in repeat */						
+	margin-bottom: 15px;
+}
+
+.row {
+	padding: 0%;
+	height: 27%;
+	/* height: 33.6%; */
+}
+
+.viewList {
+	background-color: red;
+	margin-bottom: 100px;	
+}

@@ -1,0 +1,103 @@
+<div class="viewList">
+	<ion-view view-title="Einstellungen">
+		
+		<ion-content id="configContent">
+		<div class="item">
+
+			<div class="row">
+				<div class="col col-80">
+					<b class="configText1">Surchradius</b>
+				</div>
+
+				<div class="col col-20">
+					 <b class="configText2">{{maxSearchDistance}} km</b>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col col-100">
+				  <i class="icon"></i>
+				  	<input class="slider1" ng-model="attributes.maxSearchDistance" type="range" ng-change="setMaxSearchDistance()" name="range" min="0" max="1000000">
+				  <i class="icon"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+
+			<div class="row">
+				<div class="col col-80">
+					<b class="configText1">max. Strecke von Ausfahrt bis Ziel </b>
+				</div>
+
+				<div class="col col-20">
+					 <b class="configText2">{{maxDistanceBetweenHighwayAndDestination}} km</b>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col col-100">
+				  <i class="icon"></i>
+			 		 <input class="slider1" ng-model="attributes.maxDistanceBetweenHighwayAndDestination" type="range" ng-change="setMaxDistanceBetweenHighwayAndDestination()" name="range" min="0" max="1000000">
+				  <i class="icon"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+
+			<div class="row">
+				<div class="col col-90">
+					<b class="configText1">Anzahl der angezeigten Restaurants</b>
+				</div>
+
+				<div class="col col-10">
+					 <b class="configText2">{{attributes.maxNumberOfRestaurants}}</b>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col col-100">
+				  <i class="icon"></i>
+				  	<input class="slider1" ng-model="attributes.maxNumberOfRestaurants" type="range" ng-change="setMaxNumberOfRestaurants()" name="range" min="0" max="20">
+				  <i class="icon"></i>
+				</div>
+			</div>
+		</div>		
+
+
+		<div class="row">
+			<div class="list">
+
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      Ordnen nach:
+			    </div>
+			    <select id="select" onchange="setOrder()">
+			      <option>Abfahrt</option>
+			      <option>Distanz</option>
+			      <option>Dauer</option>
+			      <option>Bewertung</option>
+			    </select>
+			  </label>
+
+			</div>
+		</div>
+
+		</ion-content>
+		
+	<div class="tabs-striped tabs-color-balanced">
+   
+		<div class="tabs">
+		  <a class="tab-item active" href="#/app/list">
+			<i class="icon ion-ios-list"></i>
+		  </a>
+		  <a class="tab-item" href="#/app/map">
+			<i class="icon ion-map"></i>
+		  </a>			
+		</div>
+	
+    </div>
+		
+	</ion-view>
+</div>

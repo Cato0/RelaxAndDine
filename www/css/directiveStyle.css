@@ -1,0 +1,103 @@
+.leftInfo {
+	float:left;
+}
+
+.test {
+	margin-bottom: 50px;
+}
+
+.rightInfo {
+	float: left;
+	padding-left: 0%;
+}
+.centerInfo {
+	margin-top: 0%;
+/* 	font-size: 120%; */
+	margin-left: 0%;
+}
+.iconDistance {
+	
+}
+.fc1 {
+	color: #999999;
+}
+#nameDirective {
+	float: left;
+	/* width: 80%; */
+	/* margin-left: 5%; */
+	/* margin-top: 2%; */
+	font-size: 120%;
+}
+#nextStepText {
+	color: red;
+}
+#nextStep_meter {
+	/* color: blue; */
+}
+.directionImage {
+	margin-right: 5px;
+}
+.small {
+	/* width: 20px; */
+	/* height: 20px; */
+}
+.smallText {
+	float: right;
+	font-size: 50%;
+}
+.textDuration {
+	
+	float: right;
+}
+.mTop {
+	margin-top: 30%;
+	margin-left: 60%;
+	width: 77%;
+	height: 45%;
+}
+.starDirective {
+	/* width: 20%; */
+	/* margin-right: 30%; */
+	
+	/* margin-top: 2%; */
+	float: right;
+	padding: 0%;
+}
+#nextStepDirective {
+	
+	font-size: 170%;
+}	
+#buttonNavigate {
+	margin-left: 5%;
+	margin-top: 3.3%;
+	position: absolute;
+	
+	min-width: 16%;
+	max-width: 16%;
+	min-height: 9%;
+	max-height: 9%;
+}
+.buttonNavigate {
+
+}
+.paddingTop {
+		padding-top: 10%;
+		
+}
+.imgDirective {
+
+/* 	float: left; */
+	width: 100%;
+	margin-top: 0%;
+}
+.textDistance {
+	/* margin-left: 25%; */
+	/* font-size: 50%; */
+}
+#distanceDirective {
+		font-size: 170%;
+}
+
+.durationDirective {	
+	font-size: 170%;
+}

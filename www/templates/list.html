@@ -1,0 +1,48 @@
+<div class="viewList">
+
+<ion-view view-title="Raststätte">
+
+			
+  <ion-nav-buttons side="right">
+	  <button class="button icon ion-ios-gear" ng-click="fac1.goTo('app.configurations', $index)">
+		
+	  </button>
+   </ion-nav-buttons>		
+
+<ion-content id="content" overflow-scroll="true" on-swipe-left="fac1.goTo('app.map')">
+
+<!-- REFRESHER
+	<ion-refresher  enabled='true	' on-refresh='onRefresh()'>
+		<div style="height: 5px; width: 100%"></div>
+	</ion-refresher> -->
+	
+<ul class="list">
+
+<ion-scroll direction="y" id="ionScroll" style=" height: 84vh;" scrollbar-y=false>			<!-- height: 75vh for ios ; height: 80vh for android -->
+	
+	<div myindex="$index" control="dirFuncs" all="restaurants" imagesrc="firstImage" table-row="" class="row mBot" ng-repeat="x in restaurants"  m="x" on-go="fac1.goTo('app.info', $index, this)" on-route="routeTo('app.map', $index)" on-delete="deleteRow($index)">
+	
+	</div>
+</ul>
+
+</ion-scroll>
+
+</ion-content>
+  
+<div class="tabs-striped tabs-color-balanced">
+   
+    <div class="tabs">
+
+	  <a class="tab-item active" href="#/app/list">
+        <i class="icon ion-ios-list"></i>
+      </a>
+      <a class="tab-item" href="#/app/map">
+        <i class="icon ion-map"></i>   
+      </a>
+	    
+    </div>
+	
+ </div>
+	
+</ion-view>
+</div>

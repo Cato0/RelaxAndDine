@@ -1,0 +1,89 @@
+
+
+<ion-view view-title="Restaurant Informationen">
+
+  <ion-nav-buttons side="right">
+	  <button class="button icon ion-ios-gear" ng-click="fac1.goTo('app.configurations')">
+		
+	  </button>
+   </ion-nav-buttons>
+
+  <ion-content id="infoContent">
+		
+		<div class="item">
+
+			<text class="left">{{data.name}}&nbsp;</text>
+			
+			<div class="left" id="starDiv"> </div>
+			<br>
+			<br>
+			<text id="t1">{{address}}</text>
+			
+		</div>		
+		
+		<ion-scroll direction="y" id="ionScrollInfo" style=" height: 52vh;" scrollbar-y=false>
+		
+		<div class="slideshow">
+		
+		<ion-slides options="options" slider="data.slider" >
+				<ion-slide-page>
+			
+			<div>
+				<img id="slideImg1">
+			</div>
+			
+			</ion-slide-page>
+		  <ion-slide-page>
+			<div>
+				<img id="slideImg2">
+			</div>
+		  </ion-slide-page>
+		  
+		  <ion-slide-page>
+			<div>
+				<img id="slideImg3">
+			</div>
+		  </ion-slide-page>
+		  
+		  </ion-slides>
+			<div id="descriptionInfo">
+				<text>
+					<text ng-bind-html="data.description"></text>
+				</text>
+			</div>
+		</div> 
+		  
+		  </ion-scroll>
+		
+
+		<div id="navButtonsInfo">
+			<br>
+			<button class="button button-balanced" id="showMapButton" ng-click="goTo('app.map')">
+			  <i class="icon ion-location"></i>
+			  Karte
+			</button>
+		
+			<button class="button button-balanced" ng-click="openMap()">
+			  <i class="icon ion-navigate"></i>
+			  Navigation
+			</button>
+		</div>
+
+	</ion-content>
+		
+	<div class="tabs-striped tabs-color-balanced">
+		<div class="tabs">
+
+		  <a class="tab-item active" href="#/app/list">
+			<i class="icon ion-ios-list"></i>
+			
+		  </a>
+		 <a class="tab-item" href="#/app/map">
+			<i class="icon ion-map"></i>
+			
+		  </a>
+		  </div>
+	</div>
+  
+  
+</ion-view>

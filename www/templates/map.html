@@ -1,0 +1,36 @@
+<ion-view view-title="Karte">
+	
+  <ion-nav-buttons side="right">
+	  <button class="button icon ion-ios-gear" href="app/config" ng-click="fac1.goTo('app.configurations')">
+		
+	  </button>
+   </ion-nav-buttons>
+	
+    <ion-content id="mapContent">	<!-- on-swipe-right="fac1.goTo('app.list')"  -->
+		
+	<div id="map" data-tap-disabled="true">
+	
+	</div>
+	
+	<div id="mapButtonDiv">
+		<button class="button button-balanced" id="mapButton" ng-click="openMap()">
+			Start Navigation
+		</button>
+	</div>
+	
+	</ion-content>
+	
+	<div class="tabs-striped tabs-color-balanced">
+		<div class="tabs">
+
+		  <a class="tab-item" href="#/app/list">
+			<i class="icon ion-ios-list"></i>
+		  </a>
+		  <a class="tab-item active" href="#/app/map">
+			<i class="icon ion-map"></i>
+			
+		  </a>
+		</div>
+	</div>
+    
+</ion-view>
